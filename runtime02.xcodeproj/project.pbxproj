@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5DF15E371BAA9C4A0094D016 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF15E361BAA9C4A0094D016 /* main.m */; };
+		5DF15E411BAA9C5B0094D016 /* BaseModelObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF15E3E1BAA9C5B0094D016 /* BaseModelObject.m */; };
+		5DF15E421BAA9C5B0094D016 /* BeautifulGirlModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF15E401BAA9C5B0094D016 /* BeautifulGirlModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		5DF15E331BAA9C4A0094D016 /* runtime02 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = runtime02; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DF15E361BAA9C4A0094D016 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5DF15E3D1BAA9C5B0094D016 /* BaseModelObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModelObject.h; sourceTree = "<group>"; };
+		5DF15E3E1BAA9C5B0094D016 /* BaseModelObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModelObject.m; sourceTree = "<group>"; };
+		5DF15E3F1BAA9C5B0094D016 /* BeautifulGirlModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeautifulGirlModel.h; sourceTree = "<group>"; };
+		5DF15E401BAA9C5B0094D016 /* BeautifulGirlModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeautifulGirlModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				5DF15E361BAA9C4A0094D016 /* main.m */,
+				5DF15E3D1BAA9C5B0094D016 /* BaseModelObject.h */,
+				5DF15E3E1BAA9C5B0094D016 /* BaseModelObject.m */,
+				5DF15E3F1BAA9C5B0094D016 /* BeautifulGirlModel.h */,
+				5DF15E401BAA9C5B0094D016 /* BeautifulGirlModel.m */,
 			);
 			path = runtime02;
 			sourceTree = "<group>";
@@ -118,7 +128,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DF15E421BAA9C5B0094D016 /* BeautifulGirlModel.m in Sources */,
 				5DF15E371BAA9C4A0094D016 /* main.m in Sources */,
+				5DF15E411BAA9C5B0094D016 /* BaseModelObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
