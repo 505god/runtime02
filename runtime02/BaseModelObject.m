@@ -113,21 +113,22 @@
     ///赋值给实体类的属性
     for (int i = 0; i < dicKey.count; i ++) {
         
-        ///2.1 通过getSetterSelWithAttibuteName 方法来获取实体类的set方法
-        SEL setSel = [self creatSetterWithPropertyName:dicKey[i]];
-        
-        if ([self respondsToSelector:setSel]) {
-            ///2.2 获取字典中key对应的value
-            NSString  *value = [NSString stringWithFormat:@"%@", data[dicKey[i]]];
+        ///属性的存在
+        if ([[self allPropertyNames]containsObject:dicKey[i]]) {
+            ///2.1 通过getSetterSelWithAttibuteName 方法来获取实体类的set方法
+            SEL setSel = [self creatSetterWithPropertyName:dicKey[i]];
             
-            ///2.3 把值通过setter方法赋值给实体类的属性
-            [self performSelectorOnMainThread:setSel
-                                   withObject:value
-                                waitUntilDone:[NSThread isMainThread]];
+            if ([self respondsToSelector:setSel]) {
+                ///2.2 获取字典中key对应的value
+                NSString  *value = [NSString stringWithFormat:@"%@", data[dicKey[i]]];
+                
+                ///2.3 把值通过setter方法赋值给实体类的属性
+                [self performSelectorOnMainThread:setSel
+                                       withObject:value
+                                    waitUntilDone:[NSThread isMainThread]];
+            }
         }
-        
     }
-    
 }
 
 @end
